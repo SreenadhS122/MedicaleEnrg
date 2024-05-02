@@ -3,9 +3,12 @@ body{
 }
 .firstpage 
 {
- background-color: #26335D;
- width: 1440px;
- height: 777px;
+    background-color: #26335D;
+    width: 100%;
+    height: 777px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .navbar {
     color: white;
@@ -25,6 +28,30 @@ body{
     margin-right: 0px;
     margin-left: 40px;
     border-color: transparent;
+}
+.get-quote-now-button{
+    background-color: #1BA0AB;
+    width: 137px;
+    height: 52px;
+    border-radius: 4px;
+    display: inline;
+    margin-right: 0px;
+    border-color: transparent; 
+    margin-left: 0px;
+    margin-top: 30px;
+    color:white
+}
+.learnmore-button{
+    width: 137px;
+    height: 52px;
+    border-radius: 4px;
+    display: inline;
+    margin-right: 0px;
+    margin-left: 40px;
+    border-color: #1BA0AB ;
+    background-color: transparent; 
+    margin-top: 30px;
+    color: white;
 }
 .navbar-elements{
     margin-left: 59px;
@@ -46,12 +73,17 @@ body{
     width: 573px;
     height: 356px;
     margin-top: 90px;
-    margin-left: 65px;
+}
+.firstpagecontent h1,h2{
+    padding-top:30px ;
 }
 .firstpagemaincontent {
-    padding: 50px;
+    display: flex;
+    justify-content: space-around;
     color: white;
     display: flex;
+    margin: 0px;
+    align-self: center;
 }
 .firstpagemaincontent h5{
     color:  #1BA0AB;
@@ -60,8 +92,6 @@ body{
     width: 544px;
     height: 599px;
     padding: 0px;
-    margin-left: 50px;
-    margin-bottom: 60px;
 }
 .secondpage {
     width: 1440px;
@@ -73,8 +103,7 @@ body{
 .secondpage-img {
     width: 508px;
     height: 552px;
-    margin-left: 20px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .secondpage-content{
     max-width: 381px;
@@ -151,7 +180,6 @@ body{
     width: 1045px;
     height: 622px;
     padding-top: 50px;
-    gap: 30px;
     justify-content: space-between;
 }
 .product{
