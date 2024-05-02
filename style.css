@@ -48,7 +48,7 @@ body{
     display: inline;
     margin-right: 0px;
     margin-left: 40px;
-    border-color: #1BA0AB ;
+    border:1px solid #1BA0AB;
     background-color: transparent; 
     margin-top: 30px;
     color: white;
