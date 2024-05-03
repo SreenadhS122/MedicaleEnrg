@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="firstpage">
-        <div class="navbar">
+    <div class="container bg-dark d-flexflex-column justify-between">
+        <div>
+             <nav class="navbar">
             <div class="navbar-elements">
                 <h2>MedicaleEnrg</h2>
                 <div class="navitems">
@@ -24,13 +24,17 @@
                 <a>Contact</a>    
                 </div>
             </div>
-           <div>
-            <a >Login</a>
-            <button class="searchbutton" type="submit">Search</button>
+           <div class="login-and-join">
+            <a>Login</a>
+            <button class="searchbutton" type="submit"><a class="pl">JOIN US</a><span class="material-symbols-outlined">
+                arrow_forward
+                </span></button>
            </div>
+        </nav>
         </div>
-        <div class="container firstpagemaincontent">
-            <div class="firstpagecontent">
+       
+        <div class="d-flex justify-around color-white align-items-center pt">
+            <div class="">
                 <h5>Welcome</h5>
                 <h1>A GREAT PLACE to <br> RECIEVE CARE</h1>
                 <h2>Get your best looking smile now!</h2>
@@ -42,12 +46,12 @@
             </div>
         </div>
     </div>
-    <div class="container secondpage">
+    <div class="container d-flex justify-around align-items-center">
         <div class="secondpage-img">
             <img src="./images/second-page-img.png" alt="">
         </div>
-        <div class="secondpage-content">
-            <hr>
+        <div>
+            <hr class="hr-clr">
             <h1>Our Department</h1>
             <p>
                 Problems trying to resolve the conflict between 
@@ -62,7 +66,7 @@
                
         </div>
     </div>
-    <div class="companies" > 
+    <div class="container d-flex justify-center" > 
       <div class="company-logos">
         <img src="./images/companies-1.png" alt="">
         <img src="./images/companies-2.png" alt="">
@@ -72,7 +76,7 @@
         <img src="./images/companies-6.png" alt="">
       </div>
     </div>
-    <div class="container thirdpage" >
+    <div class="container" >
         <div class="page-description">
             <h5>Practice Advice</h5>
             <h2>
@@ -83,7 +87,7 @@
                 the two major realms of Classical physics: Newtonian mechanics 
             </p>
         </div>
-        <div class="products">
+        <div class="d-flex justify-around">
             <div class="product">
                 <div id="product-1" class="product-image">
                     <div class="sale-icon">
@@ -250,7 +254,7 @@
         </div>
     </div>
     
-<div class="container fourthpage">
+<div class="container">
     <div class="page-description">
         <h5>Practice Advice</h5>
         <h2>
@@ -262,8 +266,8 @@
         </p>
     </div>   
 
-<div class="container fourthpage-cards">
-   <div class="fourthpage-each-cards"> 
+<div class="d-flex justify-around">
+   <div class="cards"> 
         <div class="card-item-1">
             <span>
                 &#9829
@@ -328,11 +332,12 @@
                                         <p>Email and community support</p>
                                     </div>
                                     </div>
+                                    
                 </ul>    
  </div>  
  <div>
     <div class="new-offer-card-new-icon"><h3>New</h3></div>
-    <div class="new-offer-card">
+    <div class="card new-offer-card">
         <div class="card-item-1">
             <span>
                 &#9829
@@ -401,7 +406,7 @@
     </div> 
  </div>
  
-<div class="fourthpage-each-cards">
+<div class="cards">
     <div class="card-item-1">
         <span>
             &#9829
@@ -593,7 +598,7 @@
         </div>
     </div>   
 </div>
-<div class="container lastpage">
+<div class="lastpage">
  <div class="lastpage-content">
  <h6>Newsletter</h6>
  <h2>JOIN US</h2>

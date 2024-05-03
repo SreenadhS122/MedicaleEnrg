@@ -1,34 +1,88 @@
 body{
-    overflow-x: hidden;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+p,h6,h3{
+    margin: 0px;
+}
+.container{
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+    gap: 20px;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-start{
+    justify-content: start;
+}
+.bg-dark{
+    background-color: #26335D;
+}
+.color-white{
+    color: white;
+}
+.align-items-center{
+    align-items: center;
+}
+.pt{
+    padding-top: 50px;
+}
+.pl{
+    padding-left: 25px;
 }
 .firstpage 
 {
     background-color: #26335D;
-    width: 100%;
-    height: 777px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .navbar {
     color: white;
-    width: 1322px;
-    height: 91px; 
+    max-width: 100%;
     display: flex; 
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
 
 }
-
+.login-and-join{
+    display: flex;
+    align-items: center;
+}
 .searchbutton {
     background-color: #1BA0AB;
-    width: 137px;
-    height: 52px;
     border-radius: 4px;
-    display: inline;
-    margin-right: 0px;
+    display:flex;
     margin-left: 40px;
     border-color: transparent;
+    color: white;
+    font-weight: 700;
+    text-align: start;
+    font-size: 14px;
+    min-width: 137px;
+    min-height: 52px;
+    align-items: center;
 }
+
 .get-quote-now-button{
     background-color: #1BA0AB;
     width: 137px;
@@ -53,9 +107,6 @@ body{
     margin-top: 30px;
     color: white;
 }
-.navbar-elements{
-    margin-left: 59px;
-}
 .navbar-elements h2{
     display: inline;
 }
@@ -70,8 +121,8 @@ body{
     font-weight: bold;
 }
 .firstpagecontent {
-    width: 573px;
-    height: 356px;
+    min-width: 573px;
+    min-height: 356px;
     margin-top: 90px;
 }
 .firstpagecontent h1,h2{
@@ -79,11 +130,10 @@ body{
 }
 .firstpagemaincontent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     display: flex;
     margin: 0px;
-    align-self: center;
 }
 .firstpagemaincontent h5{
     color:  #1BA0AB;
@@ -110,10 +160,12 @@ body{
     height: auto;
     margin-top: 150px;
 }
-.secondpage-content hr{
+.hr-clr{
     width: 94px;
     height: 4px;
-    color: #F69B25;
+    margin: 0px;
+    border: none;
+    background-color: #F69B25;
 }
 .secondpage-content h1{
     font-weight: bold;
@@ -185,7 +237,6 @@ body{
 .product{
     width: 328px;
     height: 622px;
-    padding: 0px 100px 0px;
 }
 .product-image{
     width: 348px;
@@ -317,14 +368,8 @@ body{
     height: 1314px;
     width: 100%;
 }
-.fourthpage-cards{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
-}
-.fourthpage-each-cards{
-    width: 323px;
-    height: 908px;
+.cards{
+    min-width: 323px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,10 +465,9 @@ body{
 .list-items{
     display: flex;
     max-width: 243px;
-    height: 32px;
     align-content: center;
-    padding-top: 40px;
     align-self: center;
+    align-items: center;
 }
 .fourthpage-cards ul{
     margin-bottom: 0px;
@@ -454,8 +498,7 @@ body{
     font-weight: lighter;
 }
 .new-offer-card{
-    width: 323px;
-    height: 908px;
+    min-width: 323px;
     display: flex;
     flex-direction: column;
     justify-content: center;
