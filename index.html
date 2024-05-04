@@ -12,34 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container bg-dark d-flexflex-column justify-between">
+    <div class="container bg-dark flex-column justify-between">
         <div>
-             <nav class="navbar">
+             <nav class="navbar d-flex justify-between">
             <div class="navbar-elements">
-                <h2>MedicaleEnrg</h2>
-                <div class="navitems">
-                <a>Home</a>
-                <a>Product</a>
-                <a>Pricing</a>
-                <a>Contact</a>    
+                <h2 class="d-inline">MedicaleEnrg</h2>
+                <div class="d-inline justify-around pl">
+                <a class="pl-1">Home</a>
+                <a class="pl-1">Product</a>
+                <a class="pl-1">Pricing</a>
+                <a class="pl-1">Contact</a>    
                 </div>
             </div>
-           <div class="login-and-join">
+           <div class="d-flex align-items-center">
             <a>Login</a>
-            <button class="searchbutton" type="submit"><a class="pl">JOIN US</a><span class="material-symbols-outlined">
+            <button class="btn btn-cntr btn-clr clr-white ml-4" type="submit"><a class="">JOIN US</a><span class="material-symbols-outlined">
                 arrow_forward
                 </span></button>
            </div>
         </nav>
         </div>
        
-        <div class="d-flex justify-around color-white align-items-center pt">
-            <div class="">
-                <h5>Welcome</h5>
+        <div class="d-flex justify-around clr-white align-items-center pt">
+            <div class="d-flex flex-column justify-between">
+                <h5 class="clr-text">Welcome</h5>
                 <h1>A GREAT PLACE to <br> RECIEVE CARE</h1>
                 <h2>Get your best looking smile now!</h2>
-                <button class="get-quote-now-button">Get Quote Now</button>
-                <button class="learnmore-button">Learn More</button>
+                <div class="d-flex">
+                    <button class="btn btn-cntr btn-clr clr-white">Get Quote Now</button>
+                    <button class="btn btn-cntr btn-trans btn-border-clr color-white ml-1 clr-text">Learn More</button>       
+                </div>
+                         
             </div>
             <div class="images">
                 <img src="./images/first-page-img.png" alt="">
@@ -50,23 +53,23 @@
         <div class="secondpage-img">
             <img src="./images/second-page-img.png" alt="">
         </div>
-        <div>
+        <div class="d-flex flex-column justify-between">
             <hr class="hr-clr">
-            <h1>Our Department</h1>
-            <p>
+            <h1 class="pt-2">Our Department</h1>
+            <p class="pt-2 max-content clr-light fw-5 font-small" >
                 Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: 
                 Newtonian mechanics </p>
-            <a href="">Learn More </a>
-            <div class="secondpage-arrowicon">
-              <span class="material-symbols-outlined">
+            <btn class="btn btn-start pt-2 justify-start">
+              <a href="" class="clr-text">Learn More</a>
+              <span class="material-symbols-outlined clr-text">
                 arrow_forward_ios
             </span>   
-            </div>
+        </btn>
                
         </div>
     </div>
-    <div class="container d-flex justify-center" > 
+    <div class="container d-flex justify-center pt" > 
       <div class="company-logos">
         <img src="./images/companies-1.png" alt="">
         <img src="./images/companies-2.png" alt="">
@@ -76,20 +79,78 @@
         <img src="./images/companies-6.png" alt="">
       </div>
     </div>
-    <div class="container" >
+    <div class="container d-flex flex-column justify-between">
         <div class="page-description">
             <h5>Practice Advice</h5>
             <h2>
                 Leading Medicine
             </h2>
-            <p>
+            <p class="clr-light fw-5 font-small"  >
                 Problems trying to resolve the conflict between
                 the two major realms of Classical physics: Newtonian mechanics 
             </p>
         </div>
-        <div class="d-flex justify-around">
+        <div class="d-flex justify-around pt">
             <div class="product">
-                <div id="product-1" class="product-image">
+                <div id="" class="product-image">
+                    <img src="./images/product-1.png" alt="">
+                    <div class="sale-icon">
+                        <h6>Sale</h6>
+                    </div>
+                    <div class="product-options">
+                        <button class="icons">
+                            <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                        </button>
+                        <button class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                                </span>
+                            </button>
+                        <button class="icons">
+                            <span class="material-symbols-outlined">
+                                visibility
+                                </span>
+                            </button>
+                    </div>
+                </div>
+                
+                <div class="product-details">
+                    <div class="d-flex product-name-rating" >
+                        <div>
+                        <a id="product-name" >Health Queries</a>  
+                        </div>
+                        <div class="rating" >
+                            <p><span style="color: yellow;">
+                                &#9733
+                                </span> 4.9</p>
+                        </div>
+                    </div>
+                   
+                    
+                    <h6 id="product-quote" >See Our Impressions</h6>
+                    <p id="product-description">We focus on ergonomics and meeting 
+                        you where you work. It's only a 
+                        keystroke away.</p>
+                        <span class="download-icon material-symbols-outlined">
+                            download
+                            </span>
+                            <a class="number-of-sales">15 Sales</a>
+                            <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
+                            <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
+                                 <a class="clr-text">Learn More</a> 
+                        
+                        <span  class="arrow-icon material-symbols-outlined clr-text">
+                            arrow_forward_ios
+                        </span>    
+                            </button>
+                          
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/product-2.png" alt="">
                     <div class="sale-icon">
                         <h6>Sale</h6>
                     </div>
@@ -133,10 +194,10 @@
                             </span>
                             <a class="number-of-sales">15 Sales</a>
                             <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
-                            <button class="product-learnmorebutton">
-                                 <a>Learn More</a> 
+                            <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
+                                 <a class="clr-text">Learn More</a> 
                         
-                        <span  class="arrow-icon material-symbols-outlined">
+                        <span class="arrow-icon material-symbols-outlined clr-text">
                             arrow_forward_ios
                         </span>    
                             </button>
@@ -144,62 +205,8 @@
                 </div>
             </div>
             <div class="product">
-                <div id="product-2" class="product-image">
-                    <div class="sale-icon">
-                        <h6>Sale</h6>
-                    </div>
-                    <div class="product-options">
-                        <button class="icons">
-                            <span class="material-symbols-outlined">
-                            favorite
-                            </span>
-                        </button>
-                        <button class="icons">
-                            <span class="material-symbols-outlined">
-                                shopping_cart
-                                </span>
-                            </button>
-                        <button class="icons">
-                            <span class="material-symbols-outlined">
-                                visibility
-                                </span>
-                            </button>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <div class="d-flex product-name-rating" >
-                        <div>
-                        <a id="product-name" >Health Queries</a>  
-                        </div>
-                        <div class="rating" >
-                            <p><span style="color: yellow;">
-                                &#9733
-                                </span> 4.9</p>
-                        </div>
-                    </div>
-                   
-                    
-                    <h6 id="product-quote" >See Our Impressions</h6>
-                    <p id="product-description">We focus on ergonomics and meeting 
-                        you where you work. It's only a 
-                        keystroke away.</p>
-                        <span class="download-icon material-symbols-outlined">
-                            download
-                            </span>
-                            <a class="number-of-sales">15 Sales</a>
-                            <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
-                            <button class="product-learnmorebutton">
-                                 <a>Learn More</a> 
-                        
-                        <span class="arrow-icon material-symbols-outlined">
-                            arrow_forward_ios
-                        </span>    
-                            </button>
-                          
-                </div>
-            </div>
-            <div class="product">
-                <div id="product-3" class="product-image">
+                <div class="product-image">
+                    <img src="./images/product-3.png" alt="">
                     <div class="sale-icon">
                         <h6>Sale</h6>
                     </div>
@@ -241,10 +248,10 @@
                             </span>
                             <a class="number-of-sales">15 Sales</a>
                             <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
-                            <button class="product-learnmorebutton">
-                                 <a>Learn More</a> 
+                            <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
+                                 <a class="clr-text">Learn More</a> 
                         
-                        <span class="arrow-icon material-symbols-outlined">
+                        <span class="arrow-icon material-symbols-outlined clr-text">
                             arrow_forward_ios
                         </span>    
                             </button>
@@ -254,7 +261,7 @@
         </div>
     </div>
     
-<div class="container">
+<div class="container d-flex flex-column justify-between">
     <div class="page-description">
         <h5>Practice Advice</h5>
         <h2>
@@ -266,8 +273,8 @@
         </p>
     </div>   
 
-<div class="d-flex justify-around">
-   <div class="cards"> 
+<div class="d-flex justify-around pt">
+   <div class="cards justify-center"> 
         <div class="card-item-1">
             <span>
                 &#9829
@@ -281,15 +288,15 @@
             <p class="card-item-6" >Slate helps you see how 
                 many more days you need...</p>
                     <button id="cardbutton">Try For Free</button>
-                    <ul style="list-style-type: none;" >
+                    <ul style="list-style-type: none;">
                     <div class="list-items">
                     <div class="card-tick-icon">
                         <span class="material-symbols-outlined">
                     done
                     </span>
                 </div>
-                    <div>
-                        <p>Unlimited Product Updates</p>
+                    <div class="pl-1">
+                        <h6>Unlimited Product Updates</h6>
                     </div>
                     </div>
                     <div class="list-items">
@@ -298,8 +305,8 @@
                         done
                         </span>
                     </div>
-                        <div>
-                            <p>Unlimited Product Updates</p>
+                        <div class="pl-1">
+                            <h6>Unlimited Product Updates</h6>
                         </div>
                         </div>
                         <div class="list-items">
@@ -308,8 +315,8 @@
                             done
                             </span>
                         </div>
-                            <div>
-                                <p>Unlimited Product Updates</p>
+                            <div class="pl-1">
+                                <h6>Unlimited Product Updates</h6>
                             </div>
                             </div>
                             <div class="list-items">
@@ -318,8 +325,8 @@
                                 done
                                 </span>
                             </div>
-                                <div>
-                                    <p>1 GB Cloud storage</p>
+                                <div class="pl-1">
+                                    <h6>1 GB Cloud storage</h6>
                                 </div>
                                 </div>
                                 <div class="list-items">
@@ -328,8 +335,8 @@
                                     done
                                     </span>
                                 </div>
-                                    <div>
-                                        <p>Email and community support</p>
+                                    <div class="pl-1">
+                                        <h6>Email and community support</h6>
                                     </div>
                                     </div>
                                     
@@ -343,12 +350,12 @@
                 &#9829
             </span>
         </div>
-          <h3 class="card-item-2" >Free</h3>  
-        <h6 class="card-item-3" style="color: white;" >Organize across all 
+          <h3 class="new-card-item-2 " >Free</h3>  
+        <h6 class="new-card-item-3 ">Organize across all 
             apps by hand</h6>
             <h2 class="card-item-4" >19$</h2>
-            <h6 class="card-item-5" >Per Month</h6>
-            <p class="card-item-6" style="color: white;" >Slate helps you see how 
+            <h6 class="new-card-item-5 " >Per Month</h6>
+            <p class="new-card-item-6 " >Slate helps you see how 
                 many more days you need...</p>
                     <button id="cardbutton">Try For Free</button>
                     <ul style="list-style-type: none;color: white;" >
@@ -358,8 +365,8 @@
                     done
                     </span>
                 </div>
-                    <div>
-                        <p>Unlimited Product Updates</p>
+                    <div class="pl-1">
+                        <h6>Unlimited Product Updates</h6>
                     </div>
                     </div>
                     <div class="list-items">
@@ -368,8 +375,8 @@
                         done
                         </span>
                     </div>
-                        <div>
-                            <p>Unlimited Product Updates</p>
+                        <div class="pl-1">
+                            <h6>Unlimited Product Updates</h6>
                         </div>
                         </div>
                         <div class="list-items">
@@ -378,8 +385,8 @@
                             done
                             </span>
                         </div>
-                            <div>
-                                <p>Unlimited Product Updates</p>
+                            <div class="pl-1">
+                                <h6>Unlimited Product Updates</h6>
                             </div>
                             </div>
                             <div class="list-items">
@@ -388,8 +395,8 @@
                                 done
                                 </span>
                             </div>
-                                <div>
-                                    <p>1 GB Cloud storage</p>
+                                <div class="pl-1">
+                                    <h6>1 GB Cloud storage</h6>
                                 </div>
                                 </div>
                                 <div class="list-items">
@@ -398,8 +405,8 @@
                                     done
                                     </span>
                                 </div>
-                                    <div>
-                                        <p>Email and community support</p>
+                                    <div class="pl-1">
+                                        <h6>Email and community support</h6>
                                     </div>
                                     </div>
                 </ul>    
@@ -427,8 +434,8 @@
                 done
                 </span>
             </div>
-                <div>
-                    <p>Unlimited Product Updates</p>
+                <div class="pl-1">
+                    <h6>Unlimited Product Updates</h6>
                 </div>
                 </div>
                 <div class="list-items">
@@ -437,8 +444,8 @@
                     done
                     </span>
                 </div>
-                    <div>
-                        <p>Unlimited Product Updates</p>
+                    <div class="pl-1">
+                        <h6>Unlimited Product Updates</h6>
                     </div>
                     </div>
                     <div class="list-items">
@@ -447,8 +454,8 @@
                         done
                         </span>
                     </div>
-                        <div>
-                            <p>Unlimited Product Updates</p>
+                        <div class="pl-1">
+                            <h6>Unlimited Product Updates</h6>
                         </div>
                         </div>
                         <div class="list-items">
@@ -457,8 +464,8 @@
                             done
                             </span>
                         </div>
-                            <div>
-                                <p>1 GB Cloud storage</p>
+                            <div class="pl-1">
+                                <h6>1 GB Cloud storage</h6>
                             </div>
                             </div>
                             <div class="list-items">
@@ -467,8 +474,8 @@
                                 done
                                 </span>
                             </div>
-                                <div>
-                                    <p>Email and community support</p>
+                                <div class="pl-1">
+                                    <h6>Email and community support</h6>
                                 </div>
                                 </div>
             </ul>    
@@ -476,9 +483,9 @@
 </div>
 
 </div>
-<div class="fifthpage">
-    <div class="container page-description">
-        <h5>Practice Advice</h5>
+<div class="container bg-dark d-flex flex-column justify-between">
+    <div class="page-description">
+        <h5 class="clr-text">Practice Advice</h5>
         <h2 style="color: white;">
             Each and every client is important
         </h2>
@@ -598,19 +605,19 @@
         </div>
     </div>   
 </div>
-<div class="lastpage">
+<div class="container d-flex flex-column justify-between">
  <div class="lastpage-content">
  <h6>Newsletter</h6>
  <h2>JOIN US</h2>
- <p>Problems trying to resolve the conflict between 
+ <p class="clr-light font-small fw-5 max-content">Problems trying to resolve the conflict between 
     the two major realms of Classical physics: Newtonian mechanics </p>
  </div>
- <div class="subscribe-option">
+ <div class="subscribe-option pt-2">
     <input type="text" placeholder="Your Email">
     <button>Subscribe</button>
  </div>
 </div>
-<div class="footer">
+<div class="container footertop-bg">
     <div class="footer-content">
         <div class="company-info">
             <h5>Company Info</h5>
@@ -665,12 +672,12 @@
         </div>
     </div>
 </div>
-<div class="copyright">
-    <div class="container copyright-container">
+<div class="container footer-bg">
+    <div class="d-flex justify-between copyright-container align-items-center">
         <div>
     <h6 class="copyright-content">Made With Love By Figmaland All Right Reserved </h6>
  </div>
- <div class="socialmedia-icons">
+ <div class="socialmedia-icons align-items-center">
     <a class="contact-icon fa fa-facebook"></a>
     <a class="contact-icon fa fa-twitter"></a>
     <a class="contact-icon fa fa-instagram"></a>
