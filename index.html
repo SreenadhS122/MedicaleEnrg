@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedicaleEnrg</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/first-page-img.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,12 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="main-container">
     <div class="container bg-dark flex-column justify-between">
         <div>
              <nav class="navbar d-flex justify-between">
+                   <label class="hamburger">
+                    <input type="checkbox" name="" id="">
+                   </label>
             <div class="navbar-elements">
                 <h2 class="d-inline">MedicaleEnrg</h2>
-                <div class="d-inline justify-around pl">
+                <div class="nav-items d-inline justify-around pl">
                 <a class="pl-1">Home</a>
                 <a class="pl-1">Product</a>
                 <a class="pl-1">Pricing</a>
@@ -26,7 +31,7 @@
             </div>
            <div class="d-flex align-items-center">
             <a>Login</a>
-            <button class="btn btn-cntr btn-clr clr-white ml-4" type="submit"><a class="">JOIN US</a><span class="material-symbols-outlined">
+            <button class="join-us-btn btn btn-cntr btn-clr clr-white ml-4" type="submit"><a class="">JOIN US</a><span class="material-symbols-outlined">
                 arrow_forward
                 </span></button>
            </div>
@@ -34,7 +39,7 @@
         </div>
        
         <div class="d-flex justify-around clr-white align-items-center pt">
-            <div class="d-flex flex-column justify-between">
+            <div class="banner-info d-flex flex-column justify-between">
                 <h5 class="clr-text">Welcome</h5>
                 <h1>A GREAT PLACE to <br> RECIEVE CARE</h1>
                 <h2>Get your best looking smile now!</h2>
@@ -49,9 +54,9 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-around align-items-center">
+    <div class="dept-info container d-flex justify-around align-items-center">
         <div class="secondpage-img">
-            <img src="./images/second-page-img.png" alt="">
+            <img src="./images/second-page-img.png" style="width: 100%;" alt="">
         </div>
         <div class="d-flex flex-column justify-between">
             <hr class="hr-clr">
@@ -69,7 +74,7 @@
                
         </div>
     </div>
-    <div class="container d-flex justify-center pt" > 
+    <div class="container d-flex justify-center pt"> 
       <div class="company-logos">
         <img src="./images/companies-1.png" alt="">
         <img src="./images/companies-2.png" alt="">
@@ -90,9 +95,9 @@
                 the two major realms of Classical physics: Newtonian mechanics 
             </p>
         </div>
-        <div class="d-flex justify-around pt">
+        <div class="products justify-around pt">
             <div class="product">
-                <div id="" class="product-image">
+                <div class="product-image">
                     <img src="./images/product-1.png" alt="">
                     <div class="sale-icon">
                         <h6>Sale</h6>
@@ -273,11 +278,11 @@
         </p>
     </div>   
 
-<div class="d-flex justify-around pt">
+<div class="offer-cards justify-around pt">
    <div class="cards justify-center"> 
         <div class="card-item-1">
             <span>
-                &#9829
+                &#10084
             </span>
         </div>
           <h3 class="card-item-2" >Free</h3>  
@@ -347,7 +352,7 @@
     <div class="card new-offer-card">
         <div class="card-item-1">
             <span>
-                &#9829
+                &#10084
             </span>
         </div>
           <h3 class="new-card-item-2" >Free</h3>  
@@ -416,7 +421,7 @@
 <div class="cards">
     <div class="card-item-1">
         <span>
-            &#9829
+            &#10084
         </span>
     </div>
       <h3 class="card-item-2" >Free</h3>  
@@ -494,7 +499,7 @@
             the two major realms of Classical physics: Newtonian mechanics 
         </p>
     </div>
-    <div class="container fifthpage-cards">
+    <div class="fifthpage-cards">
         <div class="fifthpage-card-items">
             <div class="fifthpage-card-star">
                 <span>
@@ -611,11 +616,12 @@
  <h2>JOIN US</h2>
  <p class="clr-light font-small fw-5 max-content">Problems trying to resolve the conflict between 
     the two major realms of Classical physics: Newtonian mechanics </p>
- </div>
- <div class="subscribe-option pt-2">
+    <div class="subscribe-option pt-2">
     <input type="text" placeholder="Your Email">
     <button>Subscribe</button>
  </div>
+ </div>
+ 
 </div>
 <div class="container footertop-bg">
     <div class="footer-content">
@@ -683,6 +689,7 @@
     <a class="contact-icon fa fa-instagram"></a>
  </div>
     </div>
+</div>
 </div>
 </body>
 </html>

@@ -1,4 +1,6 @@
-*{
+*,
+*::after,
+*::before{
     box-sizing: border-box;
 }
 body{
@@ -11,9 +13,16 @@ a{
 p,h1,h6,h3{
     margin: 0px;
 }
+.main-container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
 .container{
+    min-width: max-content;
     max-width: 100%;
-    height: auto;
     padding: 30px 50px;
 }
 .d-flex{
@@ -155,8 +164,8 @@ p,h1,h6,h3{
     padding: 0px;
 }
 .secondpage-img {
-    width: 508px;
-    height: 552px;
+    max-width: 508px;
+    max-height: 552px;
     padding-top: 40px;
 }
 .secondpage-content{
@@ -179,15 +188,14 @@ p,h1,h6,h3{
     justify-content: center;
     margin-top: 20px;
 }
-.company-logo{
-    width: 1050px;
-    display: flex;
-    height: 175px;
-    align-self: center;
+.company-logos{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
 }
-.company-logo img{
-    width: 153px;
-    height: 34px;
+.company-logos img{
+    min-width: 153px;
+    min-height: 34px;
 }
 .page-description h5{
     color: #1BA0AB;
@@ -202,13 +210,15 @@ p,h1,h6,h3{
     color: #737373;
 
 }
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 .product{
-    width: 328px;
+    max-width: 100%;
 }
 .product-image{
-    width: 348px;
-    height: 300px;
-    position: relative;
+    min-width: 100%;
 }
 .product-details{
     width: 348px;
@@ -329,6 +339,10 @@ p,h1,h6,h3{
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.offer-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 .card-item-1{
     width: 96px;
@@ -520,11 +534,12 @@ p,h1,h6,h3{
     background-color: #26335D;
 }
 .fifthpage-cards{
-    display: flex;
+    display: grid;
+    justify-content: center;
     justify-content: space-around;
+    grid-template-columns: auto auto auto;
     padding: 160px 0px 160px 0px;
     align-items: center;
-    gap: 80px;
 }
 .fifthpage-card-items{
     background-color: white;
@@ -593,21 +608,24 @@ p,h1,h6,h3{
     max-width: 469px;
 }
 .subscribe-option{
+    padding: 0;
+    width: 100%;
+    min-height: 50px;
     align-self: center;
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 .subscribe-option input{
     border: none;
-    min-width: 571px;
-    max-width: 100%;
+    width: 100%;
     background-color: #F9F9F9;
     border: 1px #E6E6E6;
-    padding: 0px;
+    padding: 0px 0px 0px 5px;
     border-radius: 5px 0px 0px 5px;
 }
 .subscribe-option button{
-    width: 117px;
-    height: 58px;
+    max-width: 100%;
     padding-left: 0px;
     background-color: #1BA0AB;
     border: none;
@@ -640,7 +658,6 @@ p,h1,h6,h3{
     text-decoration: none;
     max-width: 256px;
     padding-bottom:15px;
-    align-items: center;
 }
 .contact{
     display: flex;
@@ -669,4 +686,104 @@ p,h1,h6,h3{
 }
 .socialmedia-icons a{
     text-decoration: none;
+}
+.hamburger{
+    display: none;
+}
+/* hamburger menu */
+.hamburger::before,
+.hamburger::after,
+.hamburger input{
+    flex-direction: column;
+    display: flex;
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 1000px;
+}
+.hamburger input:checked{
+    background-color: red;
+}
+.hamburger input{
+    appearance: none;
+    margin-left: 0;
+    padding: 0;
+}
+.page-description{
+    width: max-content;
+}
+
+@media only screen and (max-width: 1030px) {
+    .container{
+        padding: 5px 10px;
+    }
+    .navbar{
+        position: initial;
+        padding: 0px 10px;
+        background-color: #26335D;
+    }
+    .images{
+        display: none;
+    }
+    .banner-info{
+        align-items: center;
+    }
+    .join-us-btn{
+        margin-left: 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .page-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .page-description p{
+        text-align: center;
+    }
+    .nav-items{
+        display: none;
+    }
+    .products{
+        grid-template-columns:auto;
+        gap: 25px;
+    }
+    .offer-cards{
+        grid-template-columns:auto;
+        gap: 25px;
+    }
+    .fifthpage-cards{
+        grid-template-columns:auto;
+        gap: 25px;
+    }
+    .dept-info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .company-info,.legal,.features,.resources,.getintouch{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+    .company-logos{
+        grid-template-columns: auto auto;
+        row-gap: 25px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .max-content{
+        max-width: 200px;
+    }
 }
