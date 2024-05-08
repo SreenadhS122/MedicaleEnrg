@@ -153,6 +153,11 @@ p,h1,h3,h6,h5,h2{
 .banner-gap{
     gap: 30px;
 }
+.banner-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .navbar {
     color: white;
     width: 100%;
