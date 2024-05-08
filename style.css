@@ -147,6 +147,9 @@ p,h1,h3,h6,h5,h2{
 .max-content{
     max-width: 350px;
 }
+.designer-max-content{
+    max-width: 469px;
+}
 .max-h1{
     max-width: 573px;
 }
@@ -793,6 +796,7 @@ p,h1,h3,h6,h5,h2{
 
 @media only screen and (max-width: 600px) {
     .container{
+        width: 100%;
         padding: 5px 10px;
     }
     .navbar{
