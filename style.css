@@ -237,6 +237,9 @@ p,h1,h3,h6,h5,h2{
     border: none;
     background-color: #F69B25;
 }
+.dept-info h1{
+    font-size: 40px;
+}
 .companies{
     width: 1440px;
     height: 175px;
@@ -259,6 +262,9 @@ p,h1,h3,h6,h5,h2{
 .page-heading h1{
     font-weight: 700;
 }
+.page-heading h2{
+    font-size: 40px;
+}
 .page-heading p{
     max-width: 469px;
     height: auto;
@@ -278,6 +284,7 @@ p,h1,h3,h6,h5,h2{
 .designer-page-heading-h2{
     color: white;
     text-align:start;
+    font-size: 40px;
 }
 .products{
     display: grid;
