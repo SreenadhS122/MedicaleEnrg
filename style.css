@@ -9,11 +9,12 @@ body{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 ul{
     padding: 0px;
 }
-p,h1,h3,h6{
+p,h1,h3,h6,h5,h2{
     margin: 0px;
 }
 .container{
@@ -184,15 +185,36 @@ p,h1,h3,h6{
 .card-gap{
     gap: 30px;
 }
-.images {
+.copyright-content-gap{
+    gap:213px;
+}
+.second-section-padding{
+    padding: 57px 0px 52px 0px;
+}
+.product-page-padding{
+    padding: 72px 0px 10px 0px;
+}
+.offer-cards-padding{
+    padding: 49px 0px 49px 0px;
+}
+.designer-section-padding{
+    padding: 160px 0px 160px 0px;
+}
+.subscribe-section-padding{
+    padding: 160px 0px 160px 0px;
+}
+.footer-padding{
+    padding: 50px 0px;
+}
+.images{
     width: 544px;
     height: 599px;
     padding: 0px;
 }
-.secondpage-img {
+.second-section-img {
     max-width: 100%;
 }
-.secondpage-content{
+.second-section-content{
     max-width: 381px;
     height: auto;
     margin-top: 150px;
@@ -225,7 +247,6 @@ p,h1,h3,h6{
 }
 .page-heading h1{
     font-weight: 700;
-    margin-top: 10px;
 }
 .page-heading p{
     max-width: 469px;
@@ -235,6 +256,7 @@ p,h1,h3,h6{
 }
 .designer-page-heading{
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: center;
 }
@@ -297,21 +319,6 @@ p,h1,h3,h6{
     font-size:16px ; 
     color: #2DC071;
     padding-left: 5px;
-}
-.product-learnmorebutton{
-    width: 141px;
-    height: 44px;
-    background-color: transparent;
-    border:1px solid#1BA0AB;
-    border-radius: 37px;
-    color: #1BA0AB;
-}
-.product-learnmorebutton a{
-    padding-left: -5;
-    padding-bottom: 5px;
-}
-.product-learnmorebutton span{
-    padding-right: 15px;
 }
 #product-name{
     color: #1BA0AB;
@@ -508,11 +515,6 @@ p,h1,h3,h6{
     align-items: center;
     padding-top: 5px;
 }
-.fourthpage-cards ul{
-    margin-bottom: 0px;
-    padding-left: 0px;
-    align-self: center;
-}
 .list-items ul{
     padding-left: 10px;
     font-weight: 600;
@@ -577,7 +579,6 @@ p,h1,h3,h6{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 100px 0px;
-    align-items: center;
 }
 .designer-card-items{
     background-color: white;
@@ -585,7 +586,7 @@ p,h1,h3,h6{
     padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 15px;
 }
 .designer-card-details{
     width: 159px;
@@ -654,7 +655,6 @@ p,h1,h3,h6{
     padding: 0;
     width: 688px;
     min-height: 50px;
-    align-self: center;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -664,7 +664,7 @@ p,h1,h3,h6{
     width: 100%;
     background-color: #F9F9F9;
     border: 1px #E6E6E6;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 20px;
     border-radius: 5px 0px 0px 5px;
 }
 .subscribe-option button{
@@ -675,16 +675,15 @@ p,h1,h3,h6{
     color: white;
     font-size: 14px;
     font-weight: 400;
-}
-::placeholder {
-    padding-left: 15px;
+    text-indent: 15px;
 }
 .footertop-bg{
     background-color: #F8F8F8;
 }
 .footer-content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
     padding: 80px 0px;
 }
 .footer-content h5{
@@ -711,7 +710,6 @@ p,h1,h3,h6{
     color: #1BA0AB;
     width: max-content;
     align-content: center;
-    padding-bottom: 15px;
 }
 .footer-bg{
     background-color: #ECECEC;
@@ -723,9 +721,10 @@ p,h1,h3,h6{
     top: 50%;
 }
 .socialmedia-icons{
+    width: 236px;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
 }
 .socialmedia-icons a{
     text-decoration: none;
@@ -767,6 +766,9 @@ p,h1,h3,h6{
 }
 .page-heading{
     width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media only screen and (max-width: 600px) {
