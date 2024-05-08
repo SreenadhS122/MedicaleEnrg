@@ -148,7 +148,7 @@ p,h1,h3,h6,h5,h2{
     max-width: 350px;
 }
 .max-h1{
-    max-width: 442px;
+    max-width: 573px;
 }
 .banner-gap{
     gap: 30px;
@@ -208,6 +208,9 @@ p,h1,h3,h6,h5,h2{
 }
 .footer-padding{
     padding: 50px 0px;
+}
+.banner-heading{
+    font-size: 58px;
 }
 .images{
     width: 544px;
