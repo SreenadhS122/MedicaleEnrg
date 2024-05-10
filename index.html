@@ -16,10 +16,65 @@
     <div class="bg-dark">
         <div class="container d-flex align-items-center">
              <nav class="navbar">
-                   <label class="hamburger">
+                <div class="d-flex hamburger-gap align-items-center">
+                    <label class="hamburger">
                     <input type="checkbox" name="" id="">
-                   </label>
+                   </label> 
+                   <div class="sidebar">
+                    <ul >
+                        <li class="sidebar-items pt-1">
+                            <a>Home</a> 
+                        </li>
+                        <li class="sidebar-items pt-1">
+                            <label class="sidebar-drop">
+                                 <input type="checkbox">
+                                 <a class="sub-bar">Product</a>
+                            </label>
+                            <div class="sub-bar-menu">
+                               <ul>
+                                <li class="sub-bar-items pt-1">
+                                    <a href="">Product-1</a>
+                                </li>
+                                <li class="sub-bar-items pt-1">
+                                    <label class="sidebar-subproduct-check">
+                                        <input type="checkbox">
+                                        <a>Product-2</a> 
+                                    </label>
+                                        <ul class="sidebar-subproduct-drop">
+                                       <li class="pt-2">
+                                           <a href="">Product-1</a>
+                                       </li>
+                                       <li>
+                                           <a href="">Product-2</a>
+                                       </li>
+                                       <li>
+                                           <a href="">Product-3</a>
+                                       </li>
+                                       <li class="pb-2">
+                                           <a href="">Product-4</a>
+                                       </li>
+                                   </ul>
+                                </li>           
+                                <li class="sub-bar-items pt-1">
+                                    <a href="">Product-3</a>
+                                </li>
+                                <li class="sub-bar-items pt-1">
+                                    <a href="">Product-4</a>
+                                </li>
+                            </ul>   
+                            </div>
+                        </li>
+                        <li class="sidebar-items pt-1">
+                            <a>Pricing</a>
+                        </li>
+                        <li class="sidebar-items pt-1">
+                            <a>Contact</a>
+                        </li>
+                    </ul>
+                    </div>
                    <h2 class="d-inline">MedicaleEnrg</h2>
+                </div>
+                             
                    <div class="d-flex nav-gap">
                      <div class="navbar-elements">
                 <ul class="nav-items">
@@ -27,8 +82,46 @@
                     <a>Home</a>
                 </li>
                 <li>
-                     <a>Product</a>
+                     <label class="navbar-dropdown">
+                        <input type="checkbox">
+                        <a class="sub-bar">Product</a>
+                     </label>
+                     <div class="sub-menu">
+                        <ul>
+                       <li class="pt-2">
+                           <a href="">Product-1</a>
+                       </li>
+                       <li class="pt-1">
+                        <label class="navbar-subproduct-check">
+                            <input type="checkbox">
+                            <a>Product-2</a>
+                        </label>
+                            <ul class="navbar-subproduct-drop">
+                                <li class="pt-2">
+                                    <a href="">Product-1</a>
+                                </li>
+                                <li class="pt-1">
+                                    <a href="">Product-2</a>
+                                </li>
+                                <li class="pt-1">
+                                    <a href="">Product-3</a>
+                                </li>
+                                <li class="pt-1 pb-2">
+                                    <a href="">Product-4</a>
+                                </li>
+                            </ul>
+                       </li>
+                       
+                       <li class="pt-1">
+                           <a href="">Product-3</a>
+                       </li>
+                       <li class="pt-1 pb-2">
+                           <a href="">Product-4</a>
+                       </li>
+                   </ul>
+                    </div>
                 </li>
+                
                 <li>
                     <a>Pricing</a>
                 </li>
@@ -64,27 +157,25 @@
             </div>
         </div>
     </div>
-    <div class="dept-info">
-        <div class="container second-section-padding d-flex justify-around align-items-center">
+    <div class="dept-section">
+        <div class="container dept-content second-section-padding">
             <div class="second-section-img">
             <img src="./images/second-page-img.png" alt="">
         </div>
-        <div class="d-flex flex-column justify-between">
+        <div class="d-flex flex-column justify-between align-items-start">
             <hr class="hr-clr">
-            <h1 class="pt-2">Our Department</h1>
+            <h1 class="pt-2 h2-dark">Our Department</h1>
             <p class="pt-2 max-content clr-light fw-5 font-small" >
                 Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: 
                 Newtonian mechanics </p>
-            <btn class="btn btn-start pt-2 justify-start">
+            <button class="btn btn-start btn-trans p-0 justify-start">
               <a href="" class="clr-text">Learn More</a>
               <span class="material-symbols-outlined clr-text">
                 arrow_forward_ios
             </span>   
-        </btn>
+            </button>
         </div>
-        
-               
         </div>
     </div>
     <div class="d-flex justify-center pt"> 
@@ -97,14 +188,14 @@
         <img src="./images/companies-6.png" alt="">
       </div>
     </div>
-    <div>
+    <div class="pt-2">
         <div class="container product-page-padding d-flex flex-column justify-between">
         <div class="page-heading">
-            <h5>Practice Advice</h5>
-            <h2>
+            <h5 class="clr-text">Practice Advice</h5>
+            <h2 class="fw-7 font-large h2-dark">
                 Leading Medicine
             </h2>
-            <p class="clr-light fw-5 font-small"  >
+            <p class="clr-light fw-5 font-small max-content-heading">
                 Problems trying to resolve the conflict between
                 the two major realms of Classical physics: Newtonian mechanics 
             </p>
@@ -152,10 +243,12 @@
                     <p id="product-description">We focus on ergonomics and meeting 
                         you where you work. It's only a 
                         keystroke away.</p>
-                        <span class="download-icon material-symbols-outlined">
-                            download
-                            </span>
-                            <a class="number-of-sales">15 Sales</a>
+                        <div class="download-and-sale">
+                            <span class="download-icon material-symbols-outlined">
+                               download
+                               </span>
+                           <a class="number-of-sales">15 Sales</a>
+                       </div>
                             <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
                             <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
                                  <a class="clr-text">Learn More</a> 
@@ -208,10 +301,12 @@
                     <p id="product-description">We focus on ergonomics and meeting 
                         you where you work. It's only a 
                         keystroke away.</p>
-                        <span class="download-icon material-symbols-outlined">
-                            download
-                            </span>
-                            <a class="number-of-sales">15 Sales</a>
+                        <div class="download-and-sale">
+                            <span class="download-icon material-symbols-outlined">
+                               download
+                               </span>
+                           <a class="number-of-sales">15 Sales</a>
+                       </div>
                             <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
                             <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
                                  <a class="clr-text">Learn More</a> 
@@ -262,10 +357,14 @@
                     <p id="product-description">We focus on ergonomics and meeting 
                         you where you work. It's only a 
                         keystroke away.</p>
-                        <span class="download-icon material-symbols-outlined">
-                            download
-                            </span>
-                            <a class="number-of-sales">15 Sales</a>
+                       
+                            <div class="download-and-sale">
+                                 <span class="download-icon material-symbols-outlined">
+                                    download
+                                    </span>
+                                <a class="number-of-sales">15 Sales</a>
+                            </div>
+                            
                             <p class="product-price" >$16.48<span class="discount-price">$6.48</span></p>
                             <button class="btn btn-cntr btn-trans btn-border-clr btn-round mt-1">
                                  <a class="clr-text">Learn More</a> 
@@ -281,14 +380,14 @@
         </div>
     </div>
     
-<div>
-    <div class="container offer-cards-padding">
+<div class="pt-2">
+    <div class="container d-flex flex-column offer-cards-padding">
     <div class="page-heading">
-        <h5>Practice Advice</h5>
-        <h2>
+        <h5 class="clr-text">Practice Advice</h5>
+        <h2 class="fw-7 font-large h2-dark">
             Pricing
         </h2>
-        <p class="clr-light fw-5 font-small">
+        <p class="clr-light fw-5 font-small max-content-heading">
             Problems trying to resolve the conflict between
             the two major realms of Classical physics: Newtonian mechanics 
         </p>
@@ -319,7 +418,7 @@
                     </span>
                 </div>
                     <div class="pl-1">
-                        <h6>Unlimited Product Updates</h6>
+                        <h6 class="font-small ">Unlimited Product Updates</h6>
                     </div>
                     </div>
                     <div class="list-items">
@@ -367,7 +466,7 @@
  </div>  
  <div>
     <div class="new-offer-card-new-icon"><h3>New</h3></div>
-    <div class="card new-offer-card">
+    <div class="cards new-offer-card">
         <div class="card-item-1">
             <span>
                 &#10084
@@ -506,14 +605,14 @@
 </div>
 </div>
 </div>
-<div class="bg-dark">
+<div class="pt-2 bg-dark">
     <div class="container designer-section-padding d-flex flex-column justify-between">
-    <div class="designer-page-heading">
+    <div class="page-heading">
         <h5 class="clr-text">Practice Advice</h5>
-        <h2 class="designer-page-heading-h2">
+        <h2 class="clr-white font-large fw-7">
             Each and every client is important
         </h2>
-        <p class="designer-page-heading-p clr-white designer-max-content fw-5 font-small">
+        <p class="clr-white max-content-heading fw-5 font-small">
             Problems trying to resolve the conflict between 
             the two major realms of Classical physics: Newtonian mechanics 
         </p>
@@ -643,64 +742,68 @@
  </div>
 </div>
 <div class="footertop-bg">
-    <div class="container footer-padding footer-content">
-        <div class="company-info">
-            <h5>Company Info</h5>
-            <a class="footer-link">About Us</a>
-            <a class="footer-link">Carrier</a>
-            <a class="footer-link">We are hiring</a>
-            <a class="footer-link">Blog</a>
-        </div>
-        <div class="legal">
-            <h5>Legal</h5>
-            <a class="footer-link">About Us</a>
-            <a class="footer-link">Carrier</a>
-            <a class="footer-link">We are hiring</a>
-            <a class="footer-link">Blog</a>
-        </div>
-        <div class="features">
-            <h5>Features</h5>
-            <a class="footer-link">Business Marketing</a>
-            <a class="footer-link">User Analytic</a>
-            <a class="footer-link">Live Chat</a>
-            <a class="footer-link">Unlimited Support</a>
-        </div>
-        <div class="resources">
-            <h5>Resources</h5>
-            <a class="footer-link">IOS & Android</a>
-            <a class="footer-link">Watch a Demo</a>
-            <a class="footer-link">Customers</a>
-            <a class="footer-link">API</a>
-        </div>
-        <div class="getintouch">
-            <h5>Get In Touch</h5>
-            <div class="contact">
+    <footer class="container footer-padding footer-content">
+            <ul class="footer-elements">
+            <li><h5>Company Info</h5></li>
+            <li><a class="footer-link" href="">About Us</a></li>
+            <li><a class="footer-link" href="">Carrier</a></li>
+            <li><a class="footer-link" href="">We are hiring</a></li>
+            <li><a class="footer-link" href="">Blog</a>  </li>
+            </ul>
+            <ul class="footer-elements">
+                <li><h5>Company Info</h5></li>
+                <li><a class="footer-link" href="">About Us</a></li>
+                <li><a class="footer-link" href="">Carrier</a></li>
+                <li><a class="footer-link" href="">We are hiring</a></li>
+                <li><a class="footer-link" href="">Blog</a>  </li>
+                </ul>
+            <ul class="footer-elements">
+            <li><h5>Features</h5></li>
+            <li><a class="footer-link" href="">Business Marketing</a></li>
+            <li><a class="footer-link" href="">User Analytic</a></li>
+            <li><a class="footer-link" href="">Live Chat</a></li>
+            <li><a class="footer-link" href="">Unlimited Support</a></li>
+            </ul>
+            <ul class="footer-elements">
+            <li><h5>Resources</h5></li>
+            <li><a class="footer-link" href="">IOS & Android</a></li>
+            <li><a class="footer-link" href="">Watch a Demo</a></li>
+            <li><a class="footer-link" href="">Customers</a></li>
+            <li><a class="footer-link" href="">API</a></li>
+            </ul>
+            <ul class="footer-elements">
+                <li><h5>Get In Touch</h5></li>
+                <li><div class="contact">
                  <span class="contact-icon material-symbols-outlined">
                 call
                 </span>
-                <a id="link-style" class="footer-link">(480) 555-0103</a>
+                <a  class="footer-link" href="">(480) 555-0103</a>
             </div>
-           <div class="contact">
+        </li>
+            <li>
+                <div class="contact">
               <span class="contact-icon material-symbols-outlined">
                     location_on
                     </span>
-            <a class="footer-link">4517 Washington Ave. Manchester, 
+            <a class="footer-link" href="">4517 Washington Ave. Manchester, 
                 Kentucky 39495</a>
-           </div>
-              <div class="contact">
+           </div>  
+            </li>
+         <li>
+             <div class="contact">
                 <span class="contact-icon material-symbols-outlined">
                     mail
                     </span>
-            <a class="footer-link">debra.holt@example.com</a> 
-              </div>
-               
-        </div>
-    </div>
+            <a class="footer-link" href="">debra.holt@example.com</a> 
+              </div> 
+            </li>
+            </ul>
+    </footer>
 </div>
 <div class="footer-bg">
     <div class="container d-flex justify-between align-items-center">
         <div>
-    <h6 class="copyright-content">Made With Love By Figmaland All Right Reserved </h6>
+    <h6 class="copyright-content">Made With Love By Figmaland All Right Reserved</h6>
  </div>
  <div class="socialmedia-icons align-items-center">
     <a class="contact-icon fa fa-facebook"></a>
