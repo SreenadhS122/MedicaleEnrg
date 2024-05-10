@@ -18,7 +18,7 @@ ul{
     padding: 0px;
     list-style-type: none;
 }
-p,h1,h3,h6,h5,h2{
+p,h1,h3,h4,h6,h5,h2{
     margin: 0px;
 }
 img{
@@ -68,6 +68,9 @@ img{
 }
 .p-0{
     padding: 0;
+}
+.py{
+    padding: 10px;
 }
 .pt{
     padding-top: 50px;
@@ -291,7 +294,7 @@ img{
 .company-logos{
     padding-top: 25px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(6,1Fr);
 }
 .company-logos img{
     width: 100%;
@@ -304,7 +307,7 @@ img{
 }
 .products{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1Fr);
 }
 .product{
     max-width: 100%;
@@ -421,7 +424,6 @@ img{
     justify-content: center;
     padding: 50px 40px 50px 40px;
     box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
-    ;
 }
 .cards h6{
     font-size: 14px;
@@ -429,8 +431,9 @@ img{
     color: #252B42;
 }
 .offer-cards{
+    background-color: rgba(255, 255, 255, 1);
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1Fr);
 }
 .card-item-1{
     width: 96px;
@@ -520,7 +523,8 @@ img{
 }
 #cardbutton{
     background-color: #1BA0AB;
-    min-width: 80%;
+    min-width: 243px;
+    max-width: 100%;
     min-height: 52px;
     border-radius: 5px;
     display: block;
@@ -549,7 +553,7 @@ img{
 }
 .list-items{
     display: flex;
-    max-width: 243px;
+    min-width: 243px;
     align-content: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -623,7 +627,7 @@ img{
 }
 .designer-card{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1Fr);
     padding: 100px 0px;
 }
 .designer-card-items{
@@ -681,6 +685,7 @@ img{
     gap: 10px;
     align-items: center;
     align-self: center;
+    padding: 160px 0px;
 }
 .lastpage-content h6{
     color: #1BA0AB;
@@ -727,9 +732,9 @@ img{
     background-color: #F8F8F8;
 }
 .footer-content{
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
     gap: 30px;
     padding: 80px 0px;
 }
@@ -820,8 +825,8 @@ img{
 }
 .hamburger:has(input:checked) + .sidebar{
     display: flex;
-    justify-content: center;
     text-align: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -847,12 +852,12 @@ img{
     justify-content: center;
     gap: 10px;
 }
-.navbar-dropdown:hover + .sub-menu{
+/* .navbar-dropdown:hover + .sub-menu{
     display: flex;
     position: absolute;
     justify-content: center;
     gap: 10px;
-}
+} */
 .sub-bar-menu{
     display: none;
     background-color: white;
@@ -862,7 +867,7 @@ img{
     justify-content: center;
     align-self: center;
     font-size: small;
-    padding: 10px 0px;
+    padding: 10px 15px;
     margin: auto;
 }
 .sub-bar-menu a{
@@ -873,8 +878,7 @@ img{
     position: absolute;
 }
 .sidebar-drop:has(input:checked)+.sub-bar-menu{
-    display: grid;
-    grid-template-columns: auto;
+    display: block;
     gap: 10px;
 }
 .navbar-subproduct-check input{
@@ -911,6 +915,7 @@ img{
     background-color: #1BA0AB;
     position: absolute;
     border-radius: 5px;
+    align-items: center;
     top: 100%;
     left: 0px;
 }
@@ -920,13 +925,13 @@ img{
 }
 .navbar-subproduct-check:has(input:checked)+.navbar-subproduct-drop{
     flex-direction: column;
-    display: flex;
+    display: block;
     background-color: white;
     color: #1BA0AB;
     position: absolute;
     left: 105%;
 }
-.navbar-subproduct-check:hover + .navbar-subproduct-drop{
+/* .navbar-subproduct-check:hover + .navbar-subproduct-drop{
     flex-direction: column;
     display: flex;
     position: relative;
@@ -934,12 +939,10 @@ img{
     color: #1BA0AB;
     position: absolute;
     left: 105%;
-}
+} */
 .sidebar-subproduct-check:has(input:checked)+.sidebar-subproduct-drop{
     display: flex;
     flex-direction: column;
-    align-self: center;
-    align-items: center;
     gap: 15px;
 }
 
@@ -958,14 +961,24 @@ img{
     .sidebar{
         display: none;
     }
+    .lastpage-content{
+        padding: 160px 0px;
+    }
 }
 
 @media only screen and (max-width : 920px) {
+    h6{
+        padding: 0;
+    }
     .offer-cards{
-        grid-template-columns: auto auto;
+        margin: auto;
+        grid-template-columns: repeat(2,1Fr);
+    }
+    .new-offer-card-new-icon{
+        display: none;
     }
     .designer-card{
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2,1Fr);
     }
     .navbar{
         justify-content: space-between;
@@ -983,17 +996,22 @@ img{
         display: inline-block;
     }
     .nav-btn-gap{
-        gap: 10px;
+        gap: 5px;
     }
     .subscribe-option{
         width: 550px;
     }
     .footer-content{
+        display: grid;
+        justify-content: center;
+        align-items: center;
         grid-template-columns: auto auto;
         gap: 5px;
     }
     .banner-info{
+        padding-top: 40px;
         gap:10px;
+        padding-bottom: 40px;
     }
     .banner-heading{
         font-size: 40px;
@@ -1001,9 +1019,23 @@ img{
     .font-large{
         font-size: 30px;
     }
+    #cardbutton{
+        min-width: 100%;
+    }
+    .dept-info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .lastpage-content{
+        padding: 100px 0px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    h6{
+        padding: 0;
+    }
     .container{
         width: 100%;
         padding: 5px 10px;
@@ -1041,6 +1073,7 @@ img{
         display: none;
     }
     .banner-info{
+        gap: 10px;
         align-items: center;
     }
     .banner-heading{
@@ -1078,14 +1111,18 @@ img{
         gap: 25px;
     }
     .offer-cards{
-        grid-template-columns:auto;
+        grid-template-columns:1Fr;
         gap: 25px;
+    }
+    .cards{
+        justify-content: center;
+        align-items: center;
     }
     .new-offer-card-new-icon{
         display: none;
     }
     .designer-card{
-        grid-template-columns:auto;
+        grid-template-columns:1Fr;
         gap: 25px;
     }
     .dept-content{
@@ -1095,7 +1132,8 @@ img{
         align-items: center;
     }
     .footer-content{
-        grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: 1Fr;
         gap: 10px;
         justify-content: center;
     }
@@ -1107,7 +1145,7 @@ img{
         align-items: center;
     }
     .company-logos{
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2,1Fr);
         row-gap: 25px;
         justify-content: center;
         align-content: center;
@@ -1118,7 +1156,18 @@ img{
         max-width: 200px;
     }
     .subscribe-option{
-        width: 350px;
+        width: 400px;
         margin-top: 40px;
+    }
+    #cardbutton{
+        min-width: 100%;
+    }
+    .dept-info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .lastpage-content{
+        padding: 80px 0px;
     }
 }
