@@ -852,12 +852,6 @@ img{
     justify-content: center;
     gap: 10px;
 }
-/* .navbar-dropdown:hover + .sub-menu{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    gap: 10px;
-} */
 .sub-bar-menu{
     display: none;
     background-color: white;
@@ -931,15 +925,6 @@ img{
     position: absolute;
     left: 105%;
 }
-/* .navbar-subproduct-check:hover + .navbar-subproduct-drop{
-    flex-direction: column;
-    display: flex;
-    position: relative;
-    background-color: white;
-    color: #1BA0AB;
-    position: absolute;
-    left: 105%;
-} */
 .sidebar-subproduct-check:has(input:checked)+.sidebar-subproduct-drop{
     display: flex;
     flex-direction: column;
