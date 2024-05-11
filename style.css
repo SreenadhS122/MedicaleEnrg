@@ -523,8 +523,7 @@ img{
 }
 #cardbutton{
     background-color: #1BA0AB;
-    min-width: 243px;
-    max-width: 100%;
+    width: 100%;
     min-height: 52px;
     border-radius: 5px;
     display: block;
@@ -553,7 +552,7 @@ img{
 }
 .list-items{
     display: flex;
-    min-width: 243px;
+    width: 100%;
     align-content: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -949,6 +948,12 @@ img{
     .lastpage-content{
         padding: 160px 0px;
     }
+    #cardbutton{
+        width: 100%;
+    }
+    .list-items{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width : 920px) {
@@ -956,8 +961,7 @@ img{
         padding: 0;
     }
     .offer-cards{
-        margin: auto;
-        grid-template-columns: repeat(2,1Fr);
+        grid-template-columns: auto auto;
     }
     .new-offer-card-new-icon{
         display: none;
@@ -1005,14 +1009,17 @@ img{
         font-size: 30px;
     }
     #cardbutton{
-        min-width: 100%;
+        width: 100%;
     }
     .lastpage-content{
         padding: 100px 0px;
     }
+    .list-items{
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     h6{
         padding: 0;
     }
@@ -1140,7 +1147,10 @@ img{
         margin-top: 40px;
     }
     #cardbutton{
-        min-width: 100%;
+        width: 100%;
+    }
+    .list-items{
+        width: 100%;
     }
     .dept-info{
         justify-content: center;
