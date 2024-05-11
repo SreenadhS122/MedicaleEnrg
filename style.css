@@ -1007,11 +1007,6 @@ img{
     #cardbutton{
         min-width: 100%;
     }
-    .dept-info{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
     .lastpage-content{
         padding: 100px 0px;
     }
