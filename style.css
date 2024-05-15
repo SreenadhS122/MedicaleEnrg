@@ -20,14 +20,12 @@ p,h1,h3,h4,h6,h5,h2{
 }
 :root{
     --font : "Montserrat", sans-serif;
-    --primaryColor: #26335D;
+    --primaryColor: #1BA0AB;
+    --bg-dark:#26335D;
     --footerPrimary:#ECECEC;
     --footerSeconday: #F8F8F8;
-    --btnclr:#1BA0AB;
     --textPrimary:white;
-    --btnborder:#1BA0AB;
     --lightText :#737373;
-    --colorText:#1BA0AB;
     --headingClr:#252B42;
     --navbarClr : white;
 
@@ -66,7 +64,7 @@ img{
     justify-content: flex-start;
 }
 .bg-dark{
-    background-color:var(--primaryColor);
+    background-color:var(--bg-dark);
 }
 .clr-white{
     color: var(--textPrimary);
@@ -135,13 +133,13 @@ img{
     justify-content: flex-start;
 }
 .btn-clr{
-    background-color: var(--btnclr);
+    background-color: var(--primaryColor);
 }
 .btn-trans{
     background-color: transparent;
 }
 .btn-border-clr{
-    border: 1px solid var(--btnborder);
+    border: 1px solid var(--primaryColor);
 }
 .btn-round{
     border-radius: 37px;
@@ -159,7 +157,7 @@ img{
     margin-top: 35px;
 }
 .clr-text{
-    color: var(--colorText);
+    color: var(--primaryColor);
 }
 .clr-light{
     color: var(--lightText);
@@ -533,7 +531,7 @@ img{
     padding-bottom: 35px;
 }
 #cardbutton{
-    background-color: #1BA0AB;
+    background-color: var(--primaryColor);
     width: 100%;
     min-height: 52px;
     border-radius: 5px;
@@ -602,7 +600,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #26335D;
+    background-color:var(--bg-dark);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .new-offer-card h6{
@@ -678,7 +676,7 @@ img{
     padding-left: 15px;
 }
 .designer-details h6{
-    color:#1BA0AB;
+    color:var(--primaryColor);
     font-size: 16px;
     font-weight: 700;
 }
@@ -698,7 +696,7 @@ img{
     padding: 160px 0px;
 }
 .lastpage-content h6{
-    color: #1BA0AB;
+    color: var(--primaryColor);
     text-align: center;
 }
 .lastpage-content h2{
@@ -707,7 +705,7 @@ img{
     text-align: center;
 }
 .lastpage-content p{
-    color: #737373;
+    color: var(--lightText);
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -731,7 +729,7 @@ img{
 }
 .subscribe-option button{
     min-width: 117px;
-    background-color: #1BA0AB;
+    background-color: var(--primaryColor);
     border: none;
     border-radius: 0px 5px 5px 0px;
     color: white;
@@ -769,7 +767,7 @@ img{
 }
 .contact-icon{
     display: inline; 
-    color: #1BA0AB;
+    color: var(--primaryColor);
     width: max-content;
     align-content: center;
 }
