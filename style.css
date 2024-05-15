@@ -839,12 +839,12 @@ img{
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: #1BA0AB;
+    background-color: var(--primaryColor);
     position: absolute;
     top: 50px;
     left: 10px;
     transition: all 300ms ease-in-out;
-    color: #1BA0AB;
+    color: var(--primaryColor);
 }
 .hamburger:has(input:checked) + .sidebar{
     width: 150px;
@@ -853,13 +853,13 @@ img{
     top: 50px;
     left: 10px;
     border-radius: 5px;
-    background-color: #1BA0AB;
+    background-color: var(--primaryColor);
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    color: white;
+    color: var(--textPrimary);
 }
 .navbar-dropdown input{
     appearance: none;
@@ -931,7 +931,7 @@ img{
 .sub-bar:hover + .sub-menu,.sub-menu:hover{
     position: absolute;
     opacity: 1;
-    background-color: #1BA0AB;
+    background-color: var(--primaryColor);
     border-radius: 5px;
     width: 150px;
     top: 80px;
